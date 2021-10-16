@@ -41,13 +41,14 @@ CREATE TABLE `categorias` (
 --
 
 INSERT INTO `categorias` (`id`, `categoria`, `fecha`) VALUES
-(1, 'Equipos Electromecánicos', '2017-12-21 20:53:29'),
-(2, 'Taladros', '2017-12-21 20:53:29'),
-(3, 'Andamios', '2017-12-21 20:53:29'),
-(4, 'Generadores de energía', '2017-12-21 20:53:29'),
-(5, 'Equipos para construcción', '2017-12-21 20:53:29'),
-(6, 'Martillos mecánicos', '2017-12-21 23:06:40');
-
+(1, 'Analgésicos', '2021-10-05 20:53:29'),
+(2, 'Anestésicos', '2021-10-05 20:53:29'),
+(3, 'Antiinflamatorios', '2021-10-05 20:53:29'),
+(4, 'Anticepticos', '2021-10-05 20:53:29'),
+(5, 'Antibióticos', '2021-10-05 20:53:29'),
+(6, 'Material Quirurgico', '2021-10-05 20:53:29'),
+(7, 'Material de Curación', '2021-10-05 20:55:40'),
+(8, 'Equipo Médico', '2021-10-05 20:55:40');
 -- --------------------------------------------------------
 
 --
@@ -72,16 +73,16 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id`, `nombre`, `documento`, `email`, `telefono`, `direccion`, `fecha_nacimiento`, `compras`, `ultima_compra`, `fecha`) VALUES
-(3, 'Juan Villegas', 2147483647, 'juan@hotmail.com', '(300) 341-2345', 'Calle 23 # 45 - 56', '1980-11-02', 7, '2018-02-06 17:47:02', '2018-02-06 22:47:02'),
-(4, 'Pedro Pérez', 2147483647, 'pedro@gmail.com', '(399) 876-5432', 'Calle 34 N33 -56', '1970-08-07', 7, '2017-12-26 17:27:42', '2017-12-26 22:27:42'),
-(5, 'Miguel Murillo', 325235235, 'miguel@hotmail.com', '(254) 545-3446', 'calle 34 # 34 - 23', '1976-03-04', 32, '2017-12-26 17:27:13', '2017-12-27 04:38:13'),
-(6, 'Margarita Londoño', 34565432, 'margarita@hotmail.com', '(344) 345-6678', 'Calle 45 # 34 - 56', '1976-11-30', 19, '2019-05-25 01:10:41', '2019-05-25 06:10:41'),
-(7, 'Julian Ramirez', 786786545, 'julian@hotmail.com', '(675) 674-5453', 'Carrera 45 # 54 - 56', '1980-04-05', 14, '2017-12-26 17:26:28', '2017-12-26 22:26:28'),
-(8, 'Stella Jaramillo', 65756735, 'stella@gmail.com', '(435) 346-3463', 'Carrera 34 # 45- 56', '1956-06-05', 9, '2017-12-26 17:25:55', '2017-12-26 22:25:55'),
-(9, 'Eduardo López', 2147483647, 'eduardo@gmail.com', '(534) 634-6565', 'Carrera 67 # 45sur', '1978-03-04', 15, '2019-06-20 15:33:23', '2019-06-20 20:33:23'),
-(10, 'Ximena Restrepo', 436346346, 'ximena@gmail.com', '(543) 463-4634', 'calle 45 # 23 - 45', '1956-03-04', 18, '2017-12-26 17:25:08', '2017-12-26 22:25:08'),
-(11, 'David Guzman', 43634643, 'david@hotmail.com', '(354) 574-5634', 'carrera 45 # 45 ', '1967-05-04', 10, '2017-12-26 17:24:50', '2017-12-26 22:24:50'),
-(12, 'Gonzalo Pérez', 436346346, 'gonzalo@yahoo.com', '(235) 346-3464', 'Carrera 34 # 56 - 34', '1967-08-09', 24, '2017-12-25 17:24:24', '2017-12-27 00:30:12');
+(1, 'Hospital General San Juan de Dios', 2147483647, 'comprasHGSD@hotmail.com', '(502) 341-2345', '11 Calle 0-56 z1 Guatemala', '2019-08-02', 357, '2021-08-06 11:47:02', '2021-10-06 20:47:02'),
+(2, 'Area de Salud de Chimaltenango', 4836472145, 'comprasdaschm@gmail.com', '(502) 876-5432', '34 Calle # 33-05, z3 Chimaltenango', '2019-08-07', 87, '2021-07-26 10:27:42', '2021-10-06 20:55:42'),
+(3, 'Igss Consultorio Zacapa', 325235235, 'comprasigsszacapa@hotmail.com', '(502) 545-3446', 'Blvrd Ramiro de leon # 34-23, z2 Zacapa', '2019-08-08', 32, '2021-05-26 09:27:13', '2021-10-06 21:05:13'),
+(4, 'Hospital Nacional de Occidente', 34565432, 'hnacoccidente@hotmail.com', '(502) 345-6678', '10 Calle # 25-86 z3, Quetzaltenango', '2019-08-12', 319, '2021-07-25 10:10:41', '2021-10-06 21:10:41'),
+(5, 'Hospita Nacional de El Progreso', 786786545, 'comprashprog@hotmail.com', '(502) 674-5453', '5 Calle # 5-26 z1 Guastatoya', '2019-08-14', 145, '2021-08-26 11:26:28', '2021-10-06 21:19:28'),
+(6, 'Area de Salud de Baja Verapaz', 65756735, 'comprasdasbv@gmail.com', '(502) 346-3463', '11 Avenida # 14-32 z2 Baja Verapaz', '2019-08-15', 95, '2021-08-27 10:25:55', '2021-10-06 21:25:55'),
+(7, 'Igss Hospital de Coatepeque', 2147483647, 'comprasigsscoa@gmail.com', '(502) 634-6565', '1 calle # 1-25 z 1 Coatepeque', '2019-08-15', 215, '2021-09-20 14:33:23', '2021-10-06 21:33:23'),
+(8, 'Igss Policlinica zona 1', 436346346, 'iggspoliclinicacompras@gmail.com', '(502) 463-4634', '18 calle # 3-78 z1 Guatemala', '2019-08-18', 218, '2021-09-28 12:25:08', '2021-10-06 21:35:08'),
+(9, 'Area de Salud de Sacatepequez', 43634643, 'comprasdassac@hotmail.com', '(502) 574-5634', '4 calle poniente # 75 z3 Antigua Guatemala', '2019-08-18', 104, '2021-09-29 11:24:50', '2021-10-06 21:42:50'),
+(10, 'Hospital de Poptun Peten', 436346346, 'comprashpt@yahoo.com', '(502) 346-3464', '2 Avenida # 15-33 z1 Poptun', '2019-08-19', 245, '2021-10-01 09:24:24', '2021-10-06 21:53:12');
 
 -- --------------------------------------------------------
 
@@ -106,68 +107,82 @@ CREATE TABLE `productos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`id`, `id_categoria`, `codigo`, `descripcion`, `imagen`, `stock`, `precio_compra`, `precio_venta`, `ventas`, `fecha`) VALUES
-(1, 1, '101', 'Aspiradora Industrial ', 'vistas/img/productos/101/105.png', 13, 1000, 1200, 2, '2017-12-24 01:11:04'),
-(2, 1, '102', 'Plato Flotante para Allanadora', 'vistas/img/productos/102/940.jpg', 6, 4500, 6300, 3, '2017-12-26 15:04:11'),
-(3, 1, '103', 'Compresor de Aire para pintura', 'vistas/img/productos/103/763.jpg', 8, 3000, 4200, 12, '2017-12-26 15:03:22'),
-(4, 1, '104', 'Cortadora de Adobe sin Disco ', 'vistas/img/productos/104/957.jpg', 16, 4000, 5600, 4, '2017-12-26 15:03:22'),
-(5, 1, '105', 'Cortadora de Piso sin Disco ', 'vistas/img/productos/105/630.jpg', 13, 1540, 2156, 7, '2017-12-26 15:03:22'),
-(6, 1, '106', 'Disco Punta Diamante ', 'vistas/img/productos/106/635.jpg', 15, 1100, 1540, 5, '2017-12-26 15:04:38'),
-(7, 1, '107', 'Extractor de Aire ', 'vistas/img/productos/107/848.jpg', 12, 1540, 2156, 8, '2017-12-26 15:04:11'),
-(8, 1, '108', 'Guadañadora ', 'vistas/img/productos/108/163.jpg', 13, 1540, 2156, 7, '2017-12-26 15:03:52'),
-(9, 1, '109', 'Hidrolavadora Eléctrica ', 'vistas/img/productos/109/769.jpg', 15, 2600, 3640, 5, '2017-12-26 15:05:09'),
-(10, 1, '110', 'Hidrolavadora Gasolina', 'vistas/img/productos/110/582.jpg', 18, 2210, 3094, 2, '2017-12-26 15:05:09'),
-(11, 1, '111', 'Motobomba a Gasolina', 'vistas/img/productos/default/anonymous.png', 20, 2860, 4004, 0, '2017-12-21 21:56:28'),
-(12, 1, '112', 'Motobomba El?ctrica', 'vistas/img/productos/default/anonymous.png', 20, 2400, 3360, 0, '2017-12-21 21:56:28'),
-(13, 1, '113', 'Sierra Circular ', 'vistas/img/productos/default/anonymous.png', 20, 1100, 1540, 0, '2017-12-21 21:56:28'),
-(14, 1, '114', 'Disco de tugsteno para Sierra circular', 'vistas/img/productos/default/anonymous.png', 20, 4500, 6300, 0, '2017-12-21 21:56:28'),
-(15, 1, '115', 'Soldador Electrico ', 'vistas/img/productos/default/anonymous.png', 20, 1980, 2772, 0, '2017-12-21 21:56:28'),
-(16, 1, '116', 'Careta para Soldador', 'vistas/img/productos/default/anonymous.png', 20, 4200, 5880, 0, '2017-12-21 21:56:28'),
-(17, 1, '117', 'Torre de iluminacion ', 'vistas/img/productos/default/anonymous.png', 20, 1800, 2520, 0, '2017-12-21 21:56:28'),
-(18, 2, '201', 'Martillo Demoledor de Piso 110V', 'vistas/img/productos/default/anonymous.png', 20, 5600, 7840, 0, '2017-12-21 21:56:28'),
-(19, 2, '202', 'Muela o cincel martillo demoledor piso', 'vistas/img/productos/default/anonymous.png', 20, 9600, 13440, 0, '2017-12-21 21:56:28'),
-(20, 2, '203', 'Taladro Demoledor de muro 110V', 'vistas/img/productos/default/anonymous.png', 20, 3850, 5390, 0, '2017-12-21 21:56:28'),
-(21, 2, '204', 'Muela o cincel martillo demoledor muro', 'vistas/img/productos/default/anonymous.png', 20, 9600, 13440, 0, '2017-12-21 21:56:28'),
-(22, 2, '205', 'Taladro Percutor de 1/2 Madera y Metal', 'vistas/img/productos/default/anonymous.png', 20, 8000, 11200, 0, '2017-12-21 22:28:24'),
-(23, 2, '206', 'Taladro Percutor SDS Plus 110V', 'vistas/img/productos/default/anonymous.png', 20, 3900, 5460, 0, '2017-12-21 21:56:28'),
-(24, 2, '207', 'Taladro Percutor SDS Max 110V (Mineria)', 'vistas/img/productos/default/anonymous.png', 20, 4600, 6440, 0, '2017-12-21 21:56:28'),
-(25, 3, '301', 'Andamio colgante', 'vistas/img/productos/default/anonymous.png', 20, 1440, 2016, 0, '2017-12-21 21:56:28'),
-(26, 3, '302', 'Distanciador andamio colgante', 'vistas/img/productos/default/anonymous.png', 20, 1600, 2240, 0, '2017-12-21 21:56:28'),
-(27, 3, '303', 'Marco andamio modular ', 'vistas/img/productos/default/anonymous.png', 20, 900, 1260, 0, '2017-12-21 21:56:28'),
-(28, 3, '304', 'Marco andamio tijera', 'vistas/img/productos/default/anonymous.png', 20, 100, 140, 0, '2017-12-21 21:56:28'),
-(29, 3, '305', 'Tijera para andamio', 'vistas/img/productos/default/anonymous.png', 20, 162, 226, 0, '2017-12-21 21:56:28'),
-(30, 3, '306', 'Escalera interna para andamio', 'vistas/img/productos/default/anonymous.png', 20, 270, 378, 0, '2017-12-21 21:56:28'),
-(31, 3, '307', 'Pasamanos de seguridad', 'vistas/img/productos/default/anonymous.png', 20, 75, 105, 0, '2017-12-21 21:56:28'),
-(32, 3, '308', 'Rueda giratoria para andamio', 'vistas/img/productos/default/anonymous.png', 20, 168, 235, 0, '2017-12-21 21:56:28'),
-(33, 3, '309', 'Arnes de seguridad', 'vistas/img/productos/default/anonymous.png', 20, 1750, 2450, 0, '2017-12-21 21:56:28'),
-(34, 3, '310', 'Eslinga para arnes', 'vistas/img/productos/default/anonymous.png', 20, 175, 245, 0, '2017-12-21 21:56:28'),
-(35, 3, '311', 'Plataforma Met?lica', 'vistas/img/productos/default/anonymous.png', 20, 420, 588, 0, '2017-12-21 21:56:28'),
-(36, 4, '401', 'Planta Electrica Diesel 6 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3500, 4900, 0, '2017-12-21 21:56:28'),
-(37, 4, '402', 'Planta Electrica Diesel 10 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3550, 4970, 0, '2017-12-21 21:56:28'),
-(38, 4, '403', 'Planta Electrica Diesel 20 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3600, 5040, 0, '2017-12-21 21:56:28'),
-(39, 4, '404', 'Planta Electrica Diesel 30 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3650, 5110, 0, '2017-12-21 21:56:28'),
-(40, 4, '405', 'Planta Electrica Diesel 60 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3700, 5180, 0, '2017-12-21 21:56:28'),
-(41, 4, '406', 'Planta Electrica Diesel 75 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3750, 5250, 0, '2017-12-21 21:56:28'),
-(42, 4, '407', 'Planta Electrica Diesel 100 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3800, 5320, 0, '2017-12-21 21:56:28'),
-(43, 4, '408', 'Planta Electrica Diesel 120 Kva', 'vistas/img/productos/default/anonymous.png', 20, 3850, 5390, 0, '2017-12-21 21:56:28'),
-(44, 5, '501', 'Escalera de Tijera Aluminio ', 'vistas/img/productos/default/anonymous.png', 20, 350, 490, 0, '2017-12-21 21:56:28'),
-(45, 5, '502', 'Extension Electrica ', 'vistas/img/productos/default/anonymous.png', 20, 370, 518, 0, '2017-12-21 21:56:28'),
-(46, 5, '503', 'Gato tensor', 'vistas/img/productos/default/anonymous.png', 20, 380, 532, 0, '2017-12-21 21:56:28'),
-(47, 5, '504', 'Lamina Cubre Brecha ', 'vistas/img/productos/default/anonymous.png', 20, 380, 532, 0, '2017-12-21 21:56:28'),
-(48, 5, '505', 'Llave de Tubo', 'vistas/img/productos/default/anonymous.png', 20, 480, 672, 0, '2017-12-21 21:56:28'),
-(49, 5, '506', 'Manila por Metro', 'vistas/img/productos/default/anonymous.png', 20, 600, 840, 0, '2017-12-21 21:56:28'),
-(50, 5, '507', 'Polea 2 canales', 'vistas/img/productos/default/anonymous.png', 20, 900, 1260, 0, '2017-12-21 21:56:28'),
-(51, 5, '508', 'Tensor', 'vistas/img/productos/508/500.jpg', 19, 100, 140, 1, '2017-12-26 22:26:51'),
-(52, 5, '509', 'Bascula ', 'vistas/img/productos/509/878.jpg', 12, 130, 182, 8, '2017-12-26 22:26:51'),
-(53, 5, '510', 'Bomba Hidrostatica', 'vistas/img/productos/510/870.jpg', 8, 770, 1078, 12, '2017-12-26 22:26:51'),
-(54, 5, '511', 'Chapeta', 'vistas/img/productos/511/239.jpg', 16, 660, 924, 4, '2017-12-26 22:27:42'),
-(55, 5, '512', 'Cilindro muestra de concreto', 'vistas/img/productos/512/266.jpg', 16, 400, 560, 4, '2017-12-26 22:27:41'),
-(56, 5, '513', 'Cizalla de Palanca', 'vistas/img/productos/513/445.jpg', 2, 450, 630, 18, '2019-05-25 06:10:41'),
-(57, 5, '514', 'Cizalla de Tijera', 'vistas/img/productos/514/249.jpg', 18, 580, 812, 15, '2019-06-20 20:33:23'),
-(58, 5, '515', 'Coche llanta neumatica', 'vistas/img/productos/515/174.jpg', 16, 420, 588, 4, '2019-05-25 06:10:41'),
-(59, 5, '516', 'Cono slump', 'vistas/img/productos/516/228.jpg', 13, 140, 196, 7, '2019-06-20 20:33:23'),
-(60, 5, '517', 'Cortadora de Baldosin', 'vistas/img/productos/517/746.jpg', 11, 930, 1302, 9, '2019-06-20 20:33:23');
 
+
+INSERT INTO `productos` (`id`, `id_categoria`, `codigo`, `descripcion`, `imagen`, `stock`, `precio_compra`, `precio_venta`, `ventas`, `fecha`) VALUES
+(1,1, '101', 'ACETAMINOFEN TABLETA 500 MG', 'vistas/img/productos/101/101.jpg',750,1,2,3735, '2021-10-07 11:11:04'),
+(2,5, '102', 'ACICLOVIR 250MG', 'vistas/img/productos/102/102.jpg',750,15,21,2250, '2021-10-07 11:11:04'),
+(3,4, '103', 'AGUA OXIGENADA 3 GALON', 'vistas/img/productos/103/103.jpg',120,18,25,360, '2021-10-07 11:11:04'),
+(4,4, '104', 'AGUA TRIDESTILADA 1000ML', 'vistas/img/productos/104/104.jpg',450,8,11,1350, '2021-10-07 11:11:04'),
+(5,6, '105', 'AGUJA PARA ANESTESIA EPIDURAL', 'vistas/img/productos/105/105.jpg',1261,12,17,3783, '2021-10-07 11:11:04'),
+(6,6, '106', 'AGUJAS DESCARTABLES', 'vistas/img/productos/106/106.jpg',145,1,2,435, '2021-10-07 11:11:04'),
+(7,5, '107', 'ALBENDAZOL SUSPENSION', 'vistas/img/productos/107/107.jpg',1800,1,2,5400, '2021-10-07 11:11:04'),
+(8,7, '108', 'ALGODON ROLLO LIBRA', 'vistas/img/productos/108/108.jpg',396,20,28,1188, '2021-10-07 11:11:04'),
+(9,5, '109', 'AMIKACINA 100MG AMPOLLA 2ML', 'vistas/img/productos/109/109.jpg',125,3,4,3750, '2021-10-07 11:11:04'),
+(10,5, '110', 'AMINOFILINA AMPOLLA 250 MG', 'vistas/img/productos/110/110.jpg',480,443,6.34,1440, '2021-10-07 11:11:04'),
+(11,5, '111', 'AMOXICILINA 500 MG', 'vistas/img/productos/111/111.jpg',165,1,2,4950, '2021-10-07 11:11:04'),
+(12,6, '112', 'ANGIOCATH No 22', 'vistas/img/productos/112/112.jpg',200,2,4,600, '2021-10-07 11:11:04'),
+(13,5, '113', 'ATROPINA SULFATO 0.25MG ', 'vistas/img/productos/113/113.jpg',1560,2,4,4680, '2021-10-07 11:11:04'),
+(14,7, '114', 'BAJALENGUAS DE MADERA', 'vistas/img/productos/114/114.jpg',4700,1,2,1410, '2021-10-07 11:11:04'),
+(15,6, '115', 'BOLSA DE ORINA 2000ML unidad', 'vistas/img/productos/115/115.jpg',457,2,3,1371, '2021-10-07 11:11:04'),
+(16,5, '116', 'BUPIVACAINA 5 CON EPINEFRINA 20ML', 'vistas/img/productos/116/116.jpg',2500,23,33,7500, '2021-10-07 11:11:04'),
+(17,3, '117', 'CEFALOTINA SOLUCION INYECTABLE 1G', 'vistas/img/productos/117/117.jpg',1941,3,5,5823, '2021-10-07 11:11:04'),
+(18,3, '201', 'CEFOTAXIMA  1 GRAMO', 'vistas/img/productos/201/201.jpg',1024,5,7,3072, '2021-10-07 11:11:04'),
+(19,5, '202', 'CEFTRIAXONA 1 GRAMO', 'vistas/img/productos/202/202.jpg',3800,4,6,1140, '2021-10-07 11:11:04'),
+(20,5, '203', 'CIPROFLOXACINA 200MG', 'vistas/img/productos/203/203.jpg',2312,4,6,6936, '2021-10-07 11:12:05'),
+(21,6, '204', 'CLAMP UMBILICAL', 'vistas/img/productos/204/204.jpg',5400,1,2,1620, '2021-10-07 11:12:05'),
+(22,1, '205', 'CLORFENIRAMINA 10 MG', 'vistas/img/productos/205/205.jpg',2640,1,2,7920, '2021-10-07 11:12:05'),
+(23,5, '206', 'CLOROQUINA FOSFATO 250 MG', 'vistas/img/productos/206/206.jpg',5480,1,3,1644, '2021-10-07 11:12:05'),
+(24,4, '207', 'CLOTRIMAZOL CREMA 1 ', 'vistas/img/productos/207/207.jpg',600,1,3,1800, '2021-10-07 11:12:05'),
+(25,5, '301', 'COMPLEJO B VIAL 10ML', 'vistas/img/productos/301/301.jpg',1254,3,5,3762, '2021-10-07 11:12:05'),
+(26,6, '302', 'CUBRE ZAPATO SIMPLE ', 'vistas/img/productos/302/302.jpg',5840,1,2,1752, '2021-10-07 11:12:05'),
+(27,3, '303', 'DEXAMETASONA  1 ML', 'vistas/img/productos/303/303.jpg',3548,1,2,1064, '2021-10-07 11:12:05'),
+(28,4, '304', 'DEXTROSA AL 5 1000ML', 'vistas/img/productos/304/304.jpg',1100,10,15,3300, '2021-10-07 11:12:05'),
+(29,3, '305', 'DICLOFENACO SODICO 75 MG', 'vistas/img/productos/305/305.jpg',8522,1,2,2555, '2021-10-07 11:12:05'),
+(30,3, '306', 'DIPIRONA 1GR 2ML', 'vistas/img/productos/306/306.jpg',6452,2,3,1935, '2021-10-07 11:12:05'),
+(31,5, '307', 'DOBUTAMINA 250 MG', 'vistas/img/productos/307/307.jpg',852,15,22,2556, '2021-10-07 11:12:05'),
+(32,5, '308', 'DOPAMINA AMPOLLA 200 MG', 'vistas/img/productos/308/308.jpg',1061,6,8,3183, '2021-10-07 11:12:05'),
+(33,5, '309', 'ENOXAPARINA 20MG', 'vistas/img/productos/309/309.jpg',125,23,33,375, '2021-10-07 11:12:05'),
+(34,3, '310', 'EPINEFRINA  1  MG', 'vistas/img/productos/310/310.jpg',6550,2,3,1965, '2021-10-07 11:12:05'),
+(35,6, '311', 'EQUIPOS DE SUERO', 'vistas/img/productos/311/311.jpg',250,2,3,750, '2021-10-07 11:12:05'),
+(36,7, '401', 'ESPARADRAPO DE SEDA', 'vistas/img/productos/401/401.jpg',451,25,36,1353, '2021-10-07 11:12:05'),
+(37,6, '402', 'ESPECULOS VAGINALES', 'vistas/img/productos/402/402.jpg',804,4,5,2412, '2021-10-07 11:12:05'),
+(38,1, '403', 'FUROSEMIDA 10 MG', 'vistas/img/productos/403/403.jpg',188,1,2,5640, '2021-10-07 11:12:05'),
+(39,5, '404', 'GANCICLOVIR 500MG', 'vistas/img/productos/404/404.jpg',245,105,150,735, '2021-10-07 11:12:05'),
+(40,7, '405', 'GASA PIEZA DOBLADA', 'vistas/img/productos/405/405.jpg',58,118,169,174, '2021-10-07 11:12:05'),
+(41,5, '406', 'GENTAMICINA 80 MG', 'vistas/img/productos/406/406.jpg',240,2,3,7200, '2021-10-07 11:13:06'),
+(42,6, '407', 'GORROS PARA CIRUJANO', 'vistas/img/productos/407/407.jpg',284,1,2,8535, '2021-10-07 11:13:06'),
+(43,6, '408', 'GUANTES DESCARTABLES MEDIANOS', 'vistas/img/productos/408/408.jpg',625,1,2,1876, '2021-10-07 11:13:06'),
+(44,4, '501', 'HIERRO SACARATO 100MG ', 'vistas/img/productos/501/501.jpg',1850,11,15,5550, '2021-10-07 11:13:06'),
+(45,7, '502', 'HISOPOS DE MADERA 15 CMS', 'vistas/img/productos/502/502.jpg',421,5,6,1263, '2021-10-07 11:13:06'),
+(46,6, '503', 'HOJA DE BISTURI No 20', 'vistas/img/productos/503/503.jpg',3600,1,2,1080, '2021-10-07 11:13:06'),
+(47,3, '504', 'IBUPROFEN 400MG', 'vistas/img/productos/504/504.jpg',7496,2,3,2248, '2021-10-07 11:13:06'),
+(48,4, '505', 'INSULINA HUMANA CRISTALINA 100UI', 'vistas/img/productos/505/505.jpg',354,44,62,1062, '2021-10-07 11:13:06'),
+(49,4, '506', 'INSULINA NPH 100UI', 'vistas/img/productos/506/506.jpg',2451,22,32,7353, '2021-10-07 11:13:06'),
+(50,6, '507', 'JALEA LUBRICANTE PARA ULTRASONIDO  TUBO', 'vistas/img/productos/507/507.jpg',244,7,10,732, '2021-10-07 11:13:06'),
+(51,6, '508', 'JERINGA DESCARTABLE 10 CC', 'vistas/img/productos/508/508.jpg',1300,1,2,3900, '2021-10-07 11:13:06'),
+(52,1, '509', 'LANSOPRAZOL 30MG', 'vistas/img/productos/509/509.jpg',1250,2,3,3750, '2021-10-07 11:13:06'),
+(53,2, '510', 'LEVOFLOXACINA 500MG', 'vistas/img/productos/510/510.jpg',3521,8,12,1056, '2021-10-07 11:13:06'),
+(54,3, '511', 'LIDOCAINA CON EPINEFRINA', 'vistas/img/productos/511/511.jpg',5412,16,23,1623, '2021-10-07 11:13:06'),
+(55,6, '512', 'LLAVES DE TRES VIAS', 'vistas/img/productos/512/512.jpg',6541,4,6,1962, '2021-10-07 11:13:06'),
+(56,5, '513', 'LOSARTAN POTASICO 50MG', 'vistas/img/productos/513/513.jpg',8514,1,2,2554, '2021-10-07 11:13:06'),
+(57,8, '514', 'MAQUINA DE ANESTESIA', 'vistas/img/productos/514/514.jpg',2,9000,15000,6, '2021-10-07 11:13:06'),
+(58,6, '515', 'MASCARILLA RECTANGULAR CON ELASTICO', 'vistas/img/productos/515/515.jpg',1500,1,2,4500, '2021-10-07 11:14:07'),
+(59,1, '516', 'METFORMINA 850 MG', 'vistas/img/productos/516/516.jpg',2541,1,2,7623, '2021-10-07 11:14:07'),
+(60,5, '517', 'OMEPRAZOL 40 MG', 'vistas/img/productos/517/517.jpg',5214,4,6,1564, '2021-10-07 11:14:07');
+
+
+/*(61, 5, 'MD000568', 'PENICILINA SODICA CRISTALINA', 'vistas/img/productos/518/518.jpg', 1200, 2.04, 2.92, 3600, '2021-10-07 11:14:07'),
+(62, 7, 'MQ000459', 'PERICRANEALES No 23G', 'vistas/img/productos/519/519.jpg', 2451, 1.41, 2.02, 7353, '2021-10-07 11:14:07'),
+(63, 2, 'MD000604', 'RANITIDINA 50MG', 'vistas/img/productos/520/520.jpg', 5500, 0.76, 1.09, 16500, '2021-10-07 11:14:07'),
+(64, 3, 'MD000776', 'SALBUTAMOL 2 MG Jarabe', 'vistas/img/productos/521/521.jpg', 3900, 3.13, 4.47, 11700, '2021-10-07 11:14:07'),
+(65, 6, 'MQ000507', 'SELLOS DE HEPARINA', 'vistas/img/productos/522/522.jpg', 2500, 0.54, 0.77, 7500, '2021-10-07 11:14:07'),
+(66, 8, 'MQ000605', 'TERMOMETRO ORAL ', 'vistas/img/productos/523/523.jpg', 120, 4.07, 5.82, 360, '2021-10-07 11:14:07'),
+(67, 4, 'MD000665', 'TINTURA DE YODO GALON', 'vistas/img/productos/524/524.jpg', 45, 424.1, 605.89, 135, '2021-10-07 11:14:07'),
+(68, 6, 'MQ000649', 'TUBO PENROSE', 'vistas/img/productos/525/525.jpg', 89, 3.34, 4.79, 267, '2021-10-07 11:14:07'),
+(69, 7, 'MQ000676', 'VENDA ELASTICA', 'vistas/img/productos/526/526.jpg', 145, 0.32, 0.49, 435, '2021-10-07 11:14:07'),
+(70, 1, 'MD000682', 'VITAMINA K ', 'vistas/img/productos/527/527.jpg', 1252, 5.76, 8.23, 3756, '2021-10-07 11:14:07');
+*/
 -- --------------------------------------------------------
 
 --
@@ -292,13 +307,13 @@ ALTER TABLE `categorias`
 -- AUTO_INCREMENT de la tabla `clientes`
 --
 ALTER TABLE `clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
